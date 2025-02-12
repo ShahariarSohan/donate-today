@@ -123,37 +123,46 @@
   color: rgb(112, 112, 112);
 }
 /* depend on styles */
-.depend-container {
+.depend-container,
+.survive-container {
   max-width: 1200px;
   margin: 50px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.depend-content {
+.depend-content,
+.survive-content {
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   gap: 20px;
 }
-.depend-image-div {
+.depend-image-div,
+.survive-image-div {
   width: 40%;
 }
-.depend-image {
+.depend-image,
+.survive-image {
   width: 100%;
   border-radius: 5px;
 }
 .contribute-btn {
   width: 40%;
 }
-.depend-title {
+.depend-title,
+.survive-title {
   font-size: 2.5rem;
 }
-.depend-subtitle {
+.depend-subtitle,
+.survive-subtitle {
   color: rgb(112, 112, 112);
 }
-
+/* survive container */
+.survive-container {
+  flex-direction: row-reverse;
+}
 /* responsive styles */
 /* small devices */
 @media screen and (max-width: 576px) {
@@ -177,15 +186,18 @@
     grid-template-columns: 1fr;
     margin: 20px;
   }
-  .depend-container {
+  .depend-container,
+  .survive-container {
     flex-direction: column-reverse;
   }
-  .depend-content {
+  .depend-content,
+  .survive-content {
     width: 90%;
     justify-content: center;
     text-align: center;
   }
-  .depend-image-div {
+  .depend-image-div,
+  .survive-image-div {
     width: 80%;
   }
   .contribute-btn {
@@ -204,15 +216,19 @@
     grid-template-columns: 1fr;
     margin: 20px;
   }
-  .depend-container {
+  .depend-container,
+  .survive-container {
     flex-direction: column-reverse;
   }
-  .depend-content {
+
+  .depend-content,
+  .survive-content {
     width: 90%;
     justify-content: center;
     text-align: center;
   }
-  .depend-image-div {
+  .depend-image-div,
+  .survive-image-div {
     width: 80%;
   }
   .contribute-btn {
@@ -230,15 +246,18 @@
     grid-template-columns: repeat(2, 1fr);
     margin: 20px;
   }
-  .depend-container {
+  .depend-container,
+  .survive-container {
     flex-direction: column-reverse;
   }
-  .depend-content {
+  .depend-content,
+  .survive-content {
     width: 90%;
     justify-content: center;
     text-align: center;
   }
-  .depend-image-div {
+  .depend-image-div,
+  .survive-image-div {
     width: 80%;
   }
   .contribute-btn {
