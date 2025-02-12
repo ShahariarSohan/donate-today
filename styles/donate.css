@@ -122,6 +122,37 @@
 .plan-subtitle {
   color: rgb(112, 112, 112);
 }
+/* depend on styles */
+.depend-container {
+  max-width: 1200px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.depend-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.depend-image-div {
+  width: 40%;
+}
+.depend-image {
+  width: 100%;
+  border-radius: 5px;
+}
+.contribute-btn {
+  width: 40%;
+}
+.depend-title {
+  font-size: 2.5rem;
+}
+.depend-subtitle {
+  color: rgb(112, 112, 112);
+}
 
 /* responsive styles */
 /* small devices */
@@ -146,6 +177,21 @@
     grid-template-columns: 1fr;
     margin: 20px;
   }
+  .depend-container {
+    flex-direction: column-reverse;
+  }
+  .depend-content {
+    width: 90%;
+    justify-content: center;
+    text-align: center;
+  }
+  .depend-image-div {
+    width: 80%;
+  }
+  .contribute-btn {
+    width: 60%;
+    margin: auto;
+  }
 }
 /* medium devices */
 @media screen and (min-width: 577px) and (max-width: 768px) {
@@ -158,6 +204,21 @@
     grid-template-columns: 1fr;
     margin: 20px;
   }
+  .depend-container {
+    flex-direction: column-reverse;
+  }
+  .depend-content {
+    width: 90%;
+    justify-content: center;
+    text-align: center;
+  }
+  .depend-image-div {
+    width: 80%;
+  }
+  .contribute-btn {
+    width: 40%;
+    margin: auto;
+  }
 }
 @media screen and (min-width: 769px) and (max-width: 992px) {
   .donation-container {
@@ -168,5 +229,20 @@
   .plan-container {
     grid-template-columns: repeat(2, 1fr);
     margin: 20px;
+  }
+  .depend-container {
+    flex-direction: column-reverse;
+  }
+  .depend-content {
+    width: 90%;
+    justify-content: center;
+    text-align: center;
+  }
+  .depend-image-div {
+    width: 80%;
+  }
+  .contribute-btn {
+    width: 40%;
+    margin: auto;
   }
 }
