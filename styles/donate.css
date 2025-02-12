@@ -122,7 +122,7 @@
 .plan-subtitle {
   color: rgb(112, 112, 112);
 }
-/* depend on styles */
+/* depend on styles and survive section styles */
 .depend-container,
 .survive-container {
   max-width: 1200px;
@@ -130,6 +130,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.survive-container {
+  flex-direction: row-reverse;
 }
 .depend-content,
 .survive-content {
@@ -158,10 +161,6 @@
 .depend-subtitle,
 .survive-subtitle {
   color: rgb(112, 112, 112);
-}
-/* survive container */
-.survive-container {
-  flex-direction: row-reverse;
 }
 /* responsive styles */
 /* small devices */
