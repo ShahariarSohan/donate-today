@@ -19,6 +19,17 @@
   border: none;
   background: rgb(255, 89, 89);
 }
+.primary-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+.primary-subtitle {
+  text-align: center;
+  width: 40%;
+  margin: 20px auto;
+  color: rgb(112, 112, 112);
+}
 /* banner styles */
 .banner {
   color: white;
@@ -58,4 +69,38 @@
   .btn-primary {
     margin-bottom: 20px;
   }
+}
+/* donate today styles */
+.donate-today {
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.donation-container {
+  width: 60%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  color: rgb(112, 112, 112);
+}
+.donation-container {
+  text-align: center;
+}
+.donation {
+  padding: 30px;
+}
+.donate-200 {
+  box-sizing: border-box;
+  border: 2px solid rgb(255, 89, 89);
+  border-radius: 5px;
+
+  background: rgb(255, 238, 238);
+}
+.horizontal-line {
+  width: 60%;
+  border: 1px solid rgb(218, 218, 218);
 }
