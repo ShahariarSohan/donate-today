@@ -10,13 +10,38 @@
 .inter {
   font-family: "Inter", serif;
 }
-
+/* shared styles */
+.btn-primary {
+  color: white;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 4px;
+  border: none;
+  background: rgb(255, 89, 89);
+}
 /* banner styles */
 .banner {
+  color: white;
   max-width: auto;
   height: 600px;
   background: linear-gradient(0deg, rgb(18, 18, 18), rgba(18, 18, 18, 0) 100%),
-    url("../images/donation8.jpg");
+    url("../images/donation0.jpg");
   background-size: cover;
   background-position: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 24px;
+}
+.banner-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+}
+.banner-title {
+  font-size: 3.5rem;
+  font-weight: 700;
 }
