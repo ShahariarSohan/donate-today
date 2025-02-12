@@ -45,3 +45,17 @@
   font-size: 3.5rem;
   font-weight: 700;
 }
+
+/* responsive styles */
+/* small devices */
+@media screen and (max-width: 576px) {
+  .banner {
+    height: auto;
+  }
+  .banner-content {
+    width: auto;
+  }
+  .btn-primary {
+    margin-bottom: 20px;
+  }
+}
